@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+body
+{
+    background: #f8f3ff;
+}
+*
+{
+    box-sizing: unset;
+}
+
+
+.carousel {
+    position: relative;
+    margin-bottom: 4rem;
+    background-color: black;
+}
+.carousel .carousel-item img
+{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-inner h1
+{
+    animation: Slide_Left 0.7s ease;
+
+}
+.paraSlide{
+    animation: Slide_Right 0.7s ease;
+}
+.navbar h1
+{
+    
+    
+    color: white;
+    font-family: 'Dancing Script';
+    border-bottom: 2px solid #9567E0;
+    
+    
+}
+.navbar
+{
+   background: black
+}
+.navbar li
+{
+    margin: 0px 10px;
+    position: relative;
+}
+.navbar li a 
+{
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.navbar li ::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #c5a2ff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.navbar li :hover::after{
+    width: 100%;
+    box-shadow: 1px 2px 20px white;
+   
+}
+
+.btnHome
+{
+    background: transparent;
+    border: 2px solid #c5a2ff;
+    color: white;
+    border-radius: 25px;
+    margin: 5px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    animation:Slide_Up 0.9s ease;
+}
+span1
+{
+    background:#c5a2ff ;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.btnHome:hover span1
+{
+    width: 100%;
+    
+    
+}
+.btnHome:hover{
+    padding: 10px 15px;
+    /* border:2px solid #c5a2ff; */
+    border: none;
+    color: black;
+   
+}
+
+.about img
+{
+    width: 50%;
+    height: 50vh;
+}
+
+.px-4 p1
+{
+    color: #9567E0;
+    font-size: 20px;
+    
+    border-bottom: 2px solid #9567E0 ;
+    
+}
+.display-5
+{
+    font-family: "Dancing-Script";
+}
+.btnAbt 
+{
+    color:white;
+    cursor: pointer;
+    
+    display: inline-block;
+    font-size: 18px;
+    background-color: #9567E0 ;
+    box-shadow: 1px 2px 5px black;
+
+}
+.donate{
+    width: 100%;
+}
+.content
+{
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 1px 50px;
+    margin-bottom: 10%;
+    transition: all 1.3s;
+
+}
+.content:hover{
+    
+    background-color: #9567E0;
+    box-shadow: 1px 2px 10px white;
+    color: white;
+    
+}
+.content img
+{
+    width: 60px;
+    height: 60px;
+}
+.contentSevices
+{
+    width: 240px;
+    height: 240px;
+   
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    margin: 1px 50px;
+    margin-bottom: 10%;
+    transition: all 1.3s;
+}
+.contentSevices img
+{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 70px;
+    height: 70px;
+}
+.contentSevices .head
+{
+    text-align: center;
+}
+
+.col-md-3{
+    margin: 1px auto;
+}
+.card img
+{
+    width: 20rem;
+    height: 190px;
+}
+.card-donate
+{
+    margin: 40px;
+}
+.causes
+{
+    background-color: #9567E0;
+    width: 90%;
+    padding-bottom: 10%;
+    
+
+}
+.counts
+{
+    background-color: #9567E0;
+    color: white;
+    width: 90%;
+    height: 33vh;
+}
+
+.btnCard
+{
+    color: black;
+    border: 1px solid #9567E0;
+    border-radius: 30px;
+}
+.btnCard:hover{
+    background-color: #9567E0;
+    color: white;
+}
+.head img
+{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    filter: invert(100%);
+}
+.footer
+{
+    margin-top: 100px;
+}
+.container{
+    max-width: 1170px;
+   
+    margin: auto;
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer
+{
+    background-color: black;
+}
+.footer-col
+{
+    width: 25%;
+    padding: 50px 0;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.container h2 img
+{
+    
+    filter: invert(50%);
+    width: 20px;
+    height: 20px;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #9567E0;
+    height: 2px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    width: 30px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    color: grey;
+    text-transform: capitalize;
+    border: none;
+}
+.social-links a
+{
+    color:grey;
+    filter: invert(50%);
+    margin: 0px 10px 10px 0px;
+}
+.social-links img{
+    width: 20px;
+    height: 20px;
+}
+.social-links a:hover
+{
+    
+    text-decoration: none;
+    filter: invert(100%);
+}
+
+.footer-col ul li a:hover{
+    
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.footer h2{
+    font-size: 18px;
+    text-align: center;
+    margin: 10px auto;
+    
+}
+
+form
+{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 15vh auto 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 5px black;
+}
+form h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+label{
+    display: block;
+    margin: 20px 0;
+  
+}
+input , textarea{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid grey;
+}
+
+.center input
+{
+    width: 30%;
+    text-align: center;
+    margin: 10px 160px;
+    background: #9567E0;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+@keyframes Slide_Left{
+    0%{
+        transform: translateX(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes Slide_Right
+{
+    0%
+    {
+        transform: translateX(-250px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes Slide_Up
+{
+    0%
+    {
+        transform: translateY(250px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width:767px)
+{
+    .navbar
+    {
+        background-color: black;
+        color: white;
+    }
+    .navbar li :hover::after{
+        display: inline-block;
+        width: 20%;
+        box-shadow: 1px 2px 20px white;
+       
+    }
+    
+}
